@@ -1,7 +1,7 @@
 .board {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    /*TODO: height*/
+    height: 93vh;
 }
 
 .division {

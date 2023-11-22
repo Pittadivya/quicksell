@@ -11,11 +11,11 @@
     padding: 10px 20px;
     margin: 1rem 0;
 
-    color: black;
+    color: var(--dark);
 }
 
 .card:hover{
-    border-bottom-color: var(--gray-dark);
+    border-bottom: solid 4px var(--dark);
 }
 
 .card-id{
@@ -23,8 +23,7 @@
 }
 
 .card-heading{
-    color: black;
-    font-weight: 600;
+    color: var(--dark);
 }
 
 .card-tag{
