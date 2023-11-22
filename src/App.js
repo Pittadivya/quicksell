@@ -7,12 +7,13 @@ function App() {
 
     const options_ = ["status", "userId", "priority"];
     const [option, setOption] = useState("status");
+    const [desc, setDesc] = useState(false)
 
 
     return (
         <div className="App">
-            < Grouper options_={options_} setOption={setOption}/>
-            < Board option={option}/>
+            < Grouper options_={options_} setOption={setOption} setDesc={setDesc}/>
+            < Board option={option} desc={desc}/>
         </div>
     );
 }

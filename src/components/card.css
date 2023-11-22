@@ -15,7 +15,7 @@
 }
 
 .card:hover{
-    border-bottom: solid 4px var(--dark);
+    border-bottom: solid 4px #aaa;
 }
 
 .card-id{
@@ -34,4 +34,22 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.25);
     padding: 5px;
     margin: 6px 0;
+}
+
+.card-user{
+    color: var(--gray-dark);
+
+    border: solid 1px var(--gray) ;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    margin: 6px 0;
+
+    border-radius: 50px;
+    width: 40px;
+    padding: 0.25rem;
+}
+
+.card-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }

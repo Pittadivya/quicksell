@@ -19,7 +19,7 @@ function Division({title, cards}){
 
 
 
-export function Board({option}){
+export function Board({option, desc = false}){
 
     const url = "https://api.quicksell.co/v1/internal/frontend-assignment"
     const [raw, setRaw] = useState([])
@@ -28,7 +28,7 @@ export function Board({option}){
         fetch(url).then(b => b.json()).then(c => {return setRaw(c.tickets)})
     },[url])
 
-    const fieldMap = group_by(raw, option)
+    const fieldMap = group_by(raw, option, desc)
 
 return (
         <div className="board">
